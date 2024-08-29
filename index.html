@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Sidebar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="menu-header">
+            <h2>Menu</h2>
+            <button class="menu-toggle">☰</button>
+        </div>
+        <input type="text" class="search-bar" placeholder="Search">
+
+        <div class="menu-section">
+            <h3>TASKS</h3>
+            <ul>
+                <li>Upcoming <span class="badge">12</span></li>
+                <li>Today <span class="badge">5</span></li>
+                <li>Calendar</li>
+                <li>Sticky Wall</li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <h3>LISTS</h3>
+            <ul>
+                <li class="list-item"><span class="list-color personal"></span> Personal <span class="badge">3</span></li>
+                <li class="list-item"><span class="list-color work"></span> Work <span class="badge">6</span></li>
+                <li class="list-item"><span class="list-color list-1"></span> List 1 <span class="badge">3</span></li>
+                <li>Add New List</li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <h3>TAGS</h3>
+            <ul class="tags">
+                <li><span class="tag">Tag 1</span></li>
+                <li><span class="tag">Tag 2</span></li>
+                <li><button class="add-tag">+ Add Tag</button></li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <ul>
+                <li>Settings</li>
+                <li>Sign out</li>
+            </ul>
+        </div>
+    </aside>
+</body>
+</html>
