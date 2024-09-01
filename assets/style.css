@@ -240,7 +240,7 @@ section {
     to { opacity: 1; }
 }
 
-.upcoming{
+.tasks-section{
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -251,14 +251,40 @@ section {
     position: relative;
     margin: 2% 0;
 }
-.upcoming h1{
+.tasks-section h1{
     font-size: 40px;
 }
 
-.upcoming .addnew p{
+.tasks-section .add-task-container input{
     border: 1px solid gold;
     margin-top: 2%;
     padding: 10px;
     width: 800px;
     font-size: 20px;
+    margin-bottom: 4%;
+}
+.tasks-section .add-task-container input {
+    color: #8b8a8a;
+}
+#add-task-btn{
+    width: 46px;
+    height: 46px;
+    border: none;
+    background-color: white;
+}
+
+#tasks-list .task-item {
+    min-width: 400px;
+    padding: 10px;
+    background-color: #fff8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#tasks-list hr {
+    border: none;
+    height: 1px;
+    background-color: #b8beb9;
+    margin: 18px 0;
 }
