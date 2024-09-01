@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Sidebar</title>
-    <link rel="stylesheet" href="index.css">
+    <title>To-Do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
+        <!-- Menu & Button -->
         <div class="menu-header">
             <h2>Menu</h2>
-            <button class="menu-toggle">☰</button>
+            <button class="menu-toggle" id="menuToggle">✖</button>
         </div>
+        <hr>
+
+        <!-- Search Bar -->
         <input type="text" class="search-bar" placeholder="Search">
 
+        <!-- Task List -->
         <div class="menu-section">
             <h3>TASKS</h3>
             <ul>
@@ -23,17 +29,21 @@
                 <li>Sticky Wall</li>
             </ul>
         </div>
+        <hr class="line">
 
+        <!-- List Section -->
         <div class="menu-section">
             <h3>LISTS</h3>
             <ul>
-                <li class="list-item"><span class="list-color personal"></span> Personal <span class="badge">3</span></li>
-                <li class="list-item"><span class="list-color work"></span> Work <span class="badge">6</span></li>
-                <li class="list-item"><span class="list-color list-1"></span> List 1 <span class="badge">3</span></li>
+                <li><span class="list-color personal"></span> Personal <span class="badge">3</span></li>
+                <li><span class="list-color work"></span> Work <span class="badge">6</span></li>
+                <li><span class="list-color list-1"></span> List 1 <span class="badge">3</span></li>
                 <li>Add New List</li>
             </ul>
         </div>
+        <hr class="line">
 
+        <!-- Tags -->
         <div class="menu-section">
             <h3>TAGS</h3>
             <ul class="tags">
@@ -43,6 +53,7 @@
             </ul>
         </div>
 
+        <!-- Settings -->
         <div class="menu-section">
             <ul>
                 <li>Settings</li>
@@ -50,5 +61,7 @@
             </ul>
         </div>
     </aside>
+
+    <script src="script.js"></script>
 </body>
 </html>
