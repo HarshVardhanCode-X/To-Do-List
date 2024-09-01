@@ -4,63 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=New+Amsterdam&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div>
+            <nav>
+                <ul class="list1">
+                    <li><a href="index.html">Harsh's TO-DO LIST !</a></li>
+                </ul>
+                <ul class="list2">
+                    <li><a href="index.html">SIGN IN</a></li>
+                    <li><a href="index.html">REGISTER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<div class="positioning">
+
+    <!-- Greetings -->
+    <section>
+        <div class="greeting-container">
+            <h1 id="greeting"></h1>
+            <p class="welcome-text">Welcome to your personal To-Do List! Organize your tasks, stay productive, and accomplish your goals.</p>
+        </div>
+    </section>
+    <hr/>
+    
+
     <aside class="sidebar" id="sidebar">
         <!-- Menu & Button -->
         <div class="menu-header">
-            <h2>Menu</h2>
+            <h2 class="menuinvisible">Menu</h2>
             <button class="menu-toggle" id="menuToggle">✖</button>
         </div>
-        <hr>
+        <hr class="custom-hr">
 
         <!-- Search Bar -->
+        <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" class="search-bar" placeholder="Search">
 
         <!-- Task List -->
         <div class="menu-section">
             <h3>TASKS</h3>
             <ul>
-                <li>Upcoming <span class="badge">12</span></li>
-                <li>Today <span class="badge">5</span></li>
-                <li>Calendar</li>
-                <li>Sticky Wall</li>
+                <li><a href="index.html"><i class="fa-solid fa-arrow-right"></i> Upcoming</a> <span class="badge">12</span></li>
+                <li><a href="index.html"><i class="fa-solid fa-list-check"></i> Today</a> <span class="badge">5</span></li>
+                <li><a href="index.html"><i class="fa-regular fa-calendar-check"></i> Calendar</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-file-lines"></i> Sticky Wall</a></li>
             </ul>
+            <hr class="custom-hr">
         </div>
-        <hr class="line">
+       
 
         <!-- List Section -->
         <div class="menu-section">
-            <h3>LISTS</h3>
-            <ul>
-                <li><span class="list-color personal"></span> Personal <span class="badge">3</span></li>
-                <li><span class="list-color work"></span> Work <span class="badge">6</span></li>
-                <li><span class="list-color list-1"></span> List 1 <span class="badge">3</span></li>
-                <li>Add New List</li>
+            <h3 class="dena">LISTS</h3>
+            <ul class="pagal">
+                <li><a href="index.html"><i class="fa-solid fa-square-full" style="color: #e20808;"></i> Personal</a> <span class="badge">3</span></li>
+                <li><a href="index.html"><i class="fa-solid fa-square-full" style="color: #84c5f7;"></i> Work</a> <span class="badge">6</span></li>
+                <li><a href="index.html"><i class="fa-solid fa-square-full" style="color: #FFD43B;"></i> List 1</a> <span class="badge">3</span></li>
+                <li><a href="index.html"><i class="fa-solid fa-plus"></i> Add New List</a></li>
             </ul>
+            <hr class="custom-hr">
         </div>
-        <hr class="line">
+        
 
         <!-- Tags -->
         <div class="menu-section">
-            <h3>TAGS</h3>
+            <h3 class="tlc">TAGS</h3>
             <ul class="tags">
-                <li><span class="tag">Tag 1</span></li>
-                <li><span class="tag">Tag 2</span></li>
+                <li class="tag">Tag 1</li>
+                <li class="tag">Tag 2</li>
                 <li><button class="add-tag">+ Add Tag</button></li>
             </ul>
         </div>
 
         <!-- Settings -->
         <div class="menu-section">
-            <ul>
-                <li>Settings</li>
-                <li>Sign out</li>
+            <ul class="asidefooter">
+                <li><a href="index.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-hand-holding-hand"></i> Help Center</a></li>
             </ul>
         </div>
     </aside>
+
+
+    <!-- Tasks -->
+     <div class="upcoming">
+        <h1>Upcoming tasks</h1>
+        <div class="addnew">
+            <p><a href="index.html">+ Add New Task</a></p>
+        </div>
+     </div>
+   
+
+</div>
 
     <script src="script.js"></script>
 </body>
