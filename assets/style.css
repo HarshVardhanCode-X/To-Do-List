@@ -8,7 +8,7 @@
 
 .sidebar {
     width: 300px;
-    height: 100vh;
+    height: 1000px;
     background-color: #fcfafa;
     padding: 20px;
     transition: all 0.5s ease;
@@ -332,47 +332,93 @@ section {
 
 @media all and (max-width: 600px) {
     .sidebar {
-        width: 100px;
+        width: 170px;
     }
 
     .sidebar.collapsed {
-        width: 50px;
+        width: 45px;
     }
 
     .mainbody_section {
         width: 100%;
     }
 
-    .tasks-section .add-task-container input {
-        width: 90%;
-    }
-
     .search-bar {
-        width: 80px;
+        width: 100px;
     }
 
     .tasks-section .add-task-container input {
-        width: 90%;
+        width: 200px;
+        height: 25px;
+        font-size: 14px;
     }
 
     #greeting {
-        font-size: 24px;
+        font-size: 21px;
     }
 
     .tasks-section h1 {
-        font-size: 30px;
+        font-size: 23px;
     }
 
     .task-item {
         min-width: auto;
-        font-size: 18px;
+        font-size: 16px;
+    }
+    .welcome-text {
+        font-size: 12px;
+    }
+    .list1 li a, .list2 li a{
+        font-size: 16px;
+    }
+    .menuinvisible{
+        font-size: 21px;
+    }
+    .menu-section ul li{
+        font-size: 12px;
+    }
+    .menu-section .asidefooter li a{
+        font-size: 13px;
+    }
+    .menu-section h3{
+        font-size: 14px;
+    }
+    .menu-section .dena{
+        font-size: 14px;
+    }
+    #tasks-list .task-item {
+        min-width: 180px;
+        padding: 5px;
+        background-color: #fff8f8;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 6px;
+        font-size: 15px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 15px;
+    }
+    .list2 li{
+        padding: 0 6px;
+    }
+    .positioning{
+        position: relative;
+    }
+    .mainbody_section{
+        position: absolute;
+        padding-left: 11%;
+    }
+    .aside_section{
+        position: relative;
     }
 }
 
 
-@media (min-width: 601px) and (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 1004px) {
     .sidebar {
-        width: 200px;
+        width: 220px;
     }
 
     .sidebar.collapsed {
@@ -380,31 +426,62 @@ section {
     }
 
     .tasks-section .add-task-container input {
-        width: 85%;
+        width: 450px;
+        height: auto;
     }
 
     .search-bar {
-        width: 160px;
+        width: 150px;
     }
 
     #greeting {
-        font-size: 28px;
+        font-size: 29px;
     }
 
     .tasks-section h1 {
-        font-size: 35px;
+        font-size: 28px;
     }
 
     .task-item {
         min-width: auto;
+        font-size: 18px;
+    }
+    .welcome-text {
+        font-size: 14px;
+    }
+    .list1 li a, .list2 li a{
         font-size: 19px;
+    }
+    .menuinvisible{
+        font-size: 23px;
+    }
+    .menu-section ul li{
+        font-size: 13px;
+    }
+    .menu-section .asidefooter li a{
+        font-size: 14px;
+    }
+    .menu-section h3{
+        font-size: 16px;
+    }
+    .menu-section .dena{
+        font-size: 16px;
+    }
+    #tasks-list .task-item {
+        min-width: 300px;
+        padding: 8px;
+        background-color: #fff8f8;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        font-size: 18px;
     }
 }
 
 
-@media (min-width: 901px) and (max-width: 1200px) {
+@media (min-width: 1005px) and (max-width: 1200px) {
     .sidebar {
-        width: 250px;
+        width: 235px;
     }
 
     .sidebar.collapsed {
@@ -412,23 +489,45 @@ section {
     }
 
     .tasks-section .add-task-container input {
-        width: 80%;
+        width: 600px;
+        height: auto;
     }
 
     .search-bar {
-        width: 180px;
+        width: 165px;
     }
 
     #greeting {
-        font-size: 32px;
+        font-size: 33px;
     }
 
     .tasks-section h1 {
-        font-size: 38px;
+        font-size: 32px;
     }
 
     .task-item {
         min-width: auto;
         font-size: 20px;
+    }
+    .welcome-text {
+        font-size: 16px;
+    }
+    .list1 li a, .list2 li a{
+        font-size: 20px;
+    }
+    .menuinvisible{
+        font-size: 25px;
+    }
+    .menu-section ul li{
+        font-size: 14px;
+    }
+    .menu-section .asidefooter li a{
+        font-size: 15px;
+    }
+    .menu-section h3{
+        font-size: 17px;
+    }
+    .menu-section .dena{
+        font-size: 17px;
     }
 }
