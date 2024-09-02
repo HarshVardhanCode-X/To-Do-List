@@ -13,8 +13,15 @@ menuToggle.addEventListener('click', () => {
     }
 });
 
+
+
 // For Time greeting-
 window.onload = function() {
+
+    sidebar.classList.add('collapsed');
+    menuToggle.textContent = '☰';
+    menuToggle.style.marginTop = '10px';
+
     const greetingElement = document.getElementById('greeting');
     const currentHour = new Date().getHours();
     let greetingMessage = '';
@@ -31,7 +38,6 @@ window.onload = function() {
 };
 
 
-// For Creating New Task
 // Get the necessary elements
 const addTaskBtn = document.getElementById('add-task-btn');
 const newTaskInput = document.getElementById('new-task');
@@ -49,17 +55,54 @@ function addTask() {
         return;
     }
 
-    // Create a new task item
+    // Create a new task item container
+    const taskContainer = document.createElement('div');
+    taskContainer.className = 'task-container';
+
+    // Create a new task item div
     const taskItem = document.createElement('div');
     taskItem.className = 'task-item';
     taskItem.textContent = taskText;
 
+    // Create the delete button
+    const delButton = document.createElement('button');
+    delButton.className = 'delete-button';
+    delButton.textContent = 'Delete';
+
+    // Create the status button
+    const statusButton = document.createElement('button');
+    statusButton.className = 'status-button';
+    statusButton.textContent = 'Pending';
+
+    // Append the task item and buttons to the task container
+    taskContainer.appendChild(taskItem);
+    taskContainer.appendChild(statusButton);
+    taskContainer.appendChild(delButton);
+
     // Create an hr element
     const hr = document.createElement('hr');
 
-    // Prepend the new task and hr to the tasks list (so it appears at the top)
+    // Append the task container and hr to the task list
     tasksList.prepend(hr);
-    tasksList.prepend(taskItem);
+    tasksList.prepend(taskContainer);
+
+    // Add event listener for delete button
+    delButton.addEventListener('click', () => {
+        taskContainer.remove();
+        hr.remove();
+    });
+
+    // Add event listener for status button
+    statusButton.addEventListener('click', () => {
+        if (statusButton.textContent === 'Pending') {
+            statusButton.textContent = 'Completed';
+            statusButton.style.backgroundColor = 'lightgreen';
+        } else {
+            statusButton.textContent = 'Pending';
+            statusButton.style.backgroundColor = '#f7f31e';
+        }
+        alert(`Task status : ${statusButton.textContent}`);
+    });
 
     // Clear the input field
     newTaskInput.value = "";
