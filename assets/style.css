@@ -8,7 +8,7 @@
 
 .sidebar {
     width: 300px;
-    height: 130vh;
+    height: 150vh;
     background-color: #fcfafa;
     padding: 20px;
     transition: all 0.5s ease;
@@ -195,7 +195,7 @@ nav{
     align-items:center;
 }
 .menu-section .asidefooter{
-    padding-top: 50%;
+    padding-top: 70%;
 }
 .menu-section .asidefooter li a{
     font-size: 17px;
@@ -534,6 +534,7 @@ footer{
 @media (min-width: 1005px) and (max-width: 1200px) {
     .sidebar {
         width: 235px;
+        height: 140vh;
     }
 
     .sidebar.collapsed {
@@ -581,6 +582,9 @@ footer{
     }
     .menu-section .dena{
         font-size: 17px;
+    }
+    .menu-section .asidefooter{
+        padding-top: 60%;
     }
 }
 
