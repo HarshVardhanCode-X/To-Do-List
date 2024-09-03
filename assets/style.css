@@ -8,7 +8,7 @@
 
 .sidebar {
     width: 300px;
-    height: 150vh;
+    height: 100%;
     background-color: #fcfafa;
     padding: 20px;
     transition: all 0.5s ease;
@@ -195,7 +195,7 @@ nav{
     align-items:center;
 }
 .menu-section .asidefooter{
-    padding-top: 70%;
+    padding-top: 15%;
 }
 .menu-section .asidefooter li a{
     font-size: 17px;
@@ -349,6 +349,7 @@ footer{
 @media all and (max-width: 600px) {
     .sidebar {
         width: 170px;
+        height: 100%;
     }
 
     .sidebar.collapsed {
@@ -455,7 +456,7 @@ footer{
         flex-direction: column;
         justify-content:center;
         margin-top: 0;
-        padding-top: 25%;
+        padding-top: 10%;
     }
     .menu-section .asidefooter li{
         margin-top: 0;
@@ -471,6 +472,7 @@ footer{
 @media (min-width: 601px) and (max-width: 1004px) {
     .sidebar {
         width: 220px;
+        height: 100%;
     }
 
     .sidebar.collapsed {
@@ -528,13 +530,16 @@ footer{
         margin-bottom: 8px;
         font-size: 18px;
     }
+    .menu-section .asidefooter{
+        padding-top: 10%;
+    }
 }
 
 
 @media (min-width: 1005px) and (max-width: 1200px) {
     .sidebar {
         width: 235px;
-        height: 140vh;
+        height: 100%;
     }
 
     .sidebar.collapsed {
@@ -584,7 +589,7 @@ footer{
         font-size: 17px;
     }
     .menu-section .asidefooter{
-        padding-top: 60%;
+        padding-top: 14%;
     }
 }
 
