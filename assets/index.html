@@ -102,8 +102,15 @@
     <section class="tasks-section">
         <h1>Today</h1>
         <div class="add-task-container">
+            <div class="harsh">
             <input type="text" id="new-task" placeholder=" Add New Task">
             <button id="add-task-btn"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div id="filter-buttons">
+                <button id="filter-completed">Show Completed</button>
+                <button id="filter-pending">Show Pending</button>
+                <button id="clear-all">Clear All</button>
+            </div>
         </div>
         <div id="tasks-list"></div> <!-- This is where new tasks will be added -->
     </section>
