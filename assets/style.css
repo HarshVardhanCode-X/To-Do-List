@@ -9,6 +9,7 @@
 .sidebar {
     width: 300px;
     height: 100%;
+    min-height: 100vh;
     background-color: #fcfafa;
     padding: 20px;
     transition: all 0.5s ease;
@@ -350,6 +351,7 @@ footer{
     .sidebar {
         width: 170px;
         height: 100%;
+        min-height: 100vh;
     }
 
     .sidebar.collapsed {
@@ -473,6 +475,7 @@ footer{
     .sidebar {
         width: 220px;
         height: 100%;
+        min-height: 100vh;
     }
 
     .sidebar.collapsed {
@@ -540,6 +543,7 @@ footer{
     .sidebar {
         width: 235px;
         height: 100%;
+        min-height: 100vh;
     }
 
     .sidebar.collapsed {
